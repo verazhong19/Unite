@@ -3,7 +3,6 @@
 
 hsp = 0;
 vsp = 0;
-hp = 10;
 grv = 0.3;
 walkSpeed = 1;
 hitDelay = 0;

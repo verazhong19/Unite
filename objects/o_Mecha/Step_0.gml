@@ -25,7 +25,7 @@ if keyTrans{
 }
 
 //restart on death
-if (hp == 0){
+if (global.hpMecha == 0){
 	game_restart();
 }
 
