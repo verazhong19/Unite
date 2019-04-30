@@ -12,6 +12,13 @@ var move = keyRight - keyLeft;
 hsp = move * walkSpeed;
 vsp = vsp + grv;
 
+//friction
+if abs(speed) > 0 {
+   friction=0.05;
+  } else {
+   friction=0;
+  }
+
 //jump
 if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
 	vsp = -9;
@@ -51,7 +58,7 @@ if(place_meeting(x, y+vsp, o_DestroyWall)){
 if (place_meeting(x, y+1,o_Wall))&&(keyTrans == true){
 	vsp = -6;
 	alarm_set(0, 6);
-	//instance_change(o_Mecha, true);
+	
 	
 }
 //set x coordinate
@@ -67,9 +74,9 @@ if(hp == 0){
 
 //animation
 if(!place_meeting(x,y+1,o_Wall)){
-	sprite_index=s_PlayerJump;
+	sprite_index=s_PlayerJump
 	
-	if(sign(vsp)>0) image_index = 4; else image_index = 4;
+	if(sign(vsp)>0) image_index = 0; else image_index = 0;
 } else {
 	image_speed = 1;
 	
