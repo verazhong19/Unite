@@ -4,8 +4,8 @@
 //assign input
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
-keyUp = keyboard_check(ord("X"));
-keyTrans = keyboard_check(ord("C"));
+keyUp = keyboard_check(vk_up);
+keyTrans = keyboard_check(ord("Z"));
 
 //assign one step variable
 var move = keyRight - keyLeft;
@@ -24,6 +24,9 @@ if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
 	vsp = -9;
 }
 
+if(place_meeting(x, y+1,o_Switch))&&(keyUp == true){
+	vsp = -9;
+}
 //horizontal collision
 if(place_meeting(x+hsp, y, o_Wall)){
 	while(!place_meeting(x+sign(hsp),y,o_Wall)){
@@ -32,8 +35,8 @@ if(place_meeting(x+hsp, y, o_Wall)){
 	hsp = 0;	
 }
 
-if(place_meeting(x+hsp, y, o_DestroyWall)){
-	while(!place_meeting(x+sign(hsp),y,o_Wall)){
+if(place_meeting(x+hsp, y, o_Switch)){
+	while(!place_meeting(x+sign(hsp),y,o_Switch)){
 		x = x+sign(hsp);
 	}
 	hsp = 0;	
@@ -46,20 +49,24 @@ if(place_meeting(x, y+vsp, o_Wall)){
 	vsp = 0;	
 }
 
-if(place_meeting(x, y+vsp, o_DestroyWall)){
-	while(!place_meeting(x,y+sign(vsp),o_Wall)){
+if(place_meeting(x, y+vsp, o_Switch)){
+	while(!place_meeting(x,y+sign(vsp),o_Switch)){
 		y = y+sign(vsp);
 	}
 	vsp = 0;	
 }
 
-
 //transform
 if (place_meeting(x, y+1,o_Wall))&&(keyTrans == true){
 	vsp = -6;
 	alarm_set(0, 6);
-	
-	
+		
+}
+
+if (place_meeting(x, y+1,o_Switch))&&(keyTrans == true){
+	vsp = -6;
+	alarm_set(0, 6);
+		
 }
 //set x coordinate
 x = x+hsp;
@@ -68,13 +75,13 @@ x = x+hsp;
 y = y+vsp;
 
 //restart game upon death
-if(hp == 0){
+if(global.hpCorgi == 0){
 	game_restart();
 }
 
 //animation
 if(!place_meeting(x,y+1,o_Wall)){
-	sprite_index=s_PlayerJump
+	image_index=0;
 	
 	if(sign(vsp)>0) image_index = 0; else image_index = 0;
 } else {

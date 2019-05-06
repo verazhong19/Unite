@@ -1,10 +1,29 @@
 {
-    "id": "6fbf8483-e999-4a76-a976-4542f5d4ac81",
+    "id": "6a334739-52e1-4cb6-958f-d9c7797275f8",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "o_Door",
     "eventList": [
-        
+        {
+            "id": "e50af93a-3298-4dee-8dfd-f55ccda4ce64",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "18378b29-57a3-469d-a6c3-130f45975172",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "6a334739-52e1-4cb6-958f-d9c7797275f8"
+        },
+        {
+            "id": "ee638b3b-7183-4053-b074-bcb80e4ea802",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "d66b2957-8a8c-4a20-9256-5666b73faa0b",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "6a334739-52e1-4cb6-958f-d9c7797275f8"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

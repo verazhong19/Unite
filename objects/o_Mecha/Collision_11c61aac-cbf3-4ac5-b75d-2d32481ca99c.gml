@@ -2,5 +2,5 @@
 // You can write your code in this editor
 if hitDelay < 0{
 global.hpMecha --;
-hitDelay = 10;
+hitDelay = 100;
 }

@@ -5,9 +5,8 @@
 //assign input
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
-keyUp = keyboard_check(ord("X"));
-keyTrans = keyboard_check(ord("V"));
-keyShoot = keyboard_check(ord("Z"));
+keyUp = keyboard_check(vk_up);
+keyTrans = keyboard_check(ord("X"));
 
 //assign one step variable
 var move = keyRight - keyLeft;
@@ -31,17 +30,12 @@ if (global.hpMecha == 0){
 
 //horizontal collision
 if(place_meeting(x+hsp, y, o_Wall)){
-	/*while(!place_meeting(x+sign(hsp),y,o_Wall)){
-		x = x+sign(hsp);
-	}*/
 	hsp = 0;	
 }
 
 //vertical collision
 if(place_meeting(x, y+vsp, o_Wall)){
-	/*while(!place_meeting(x,y+sign(vsp),o_Wall)){
-		y = y+sign(vsp);
-	}*/
+
 	vsp = 0;	
 }
 

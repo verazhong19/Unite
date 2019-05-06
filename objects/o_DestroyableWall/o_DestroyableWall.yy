@@ -1,8 +1,8 @@
 {
-    "id": "16b9e85c-3969-4aad-9ba1-24094d9748bc",
+    "id": "9411203d-d81b-4311-bfd8-3dcbff727f01",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_DestroyWall",
+    "name": "o_DestroyableWall",
     "eventList": [
         
     ],
@@ -23,7 +23,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": false,
+    "solid": true,
     "spriteId": "90381fdf-59ca-4895-a58f-c7e094aaa52d",
     "visible": true
 }
