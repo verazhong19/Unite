@@ -57,10 +57,6 @@ if(place_meeting(x, y+vsp, o_Switch)){
 }
 
 //transform
-/*if (distance_to_object(o_Wall) < 10) {
-	show_debug_message("not enough space");
-}*/
-
 
 if (place_meeting(x, y+1-vsp,o_Wall))&&(keyTrans == true){
 	vsp = -6;
