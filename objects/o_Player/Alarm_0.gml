@@ -7,5 +7,5 @@ if (place_meeting(x, y, o_Wall)) {
 	global.space = false;
 	y -= vsp;
 	vsp = 0;
-	alarm_set(1, 50);
-} 
+	alarm_set(1, 45);
+}

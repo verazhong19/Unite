@@ -82,7 +82,7 @@ if(global.hpCorgi == 0){
 
 //animation
 if(!place_meeting(x,y+1,o_Wall)){
-	image_index=0;
+	sprite_index=s_PlayerJump;
 	
 	if(sign(vsp)>0) image_index = 0; else image_index = 0;
 } else {
@@ -96,8 +96,3 @@ if(!place_meeting(x,y+1,o_Wall)){
 }
 
 if ( hsp !=0) image_xscale = sign(hsp);
-
-if (point_in_rectangle(o_Wall.x, o_Wall.y, x - 10, y -10, x + 10, y))
-	{
-		vsp = -5;
-	}
