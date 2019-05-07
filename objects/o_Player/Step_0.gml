@@ -76,9 +76,14 @@ if(place_meeting(x, y+vsp, o_Switch)){
 }
 
 //transform
+<<<<<<< HEAD
 
 if (point_in_rectangle(o_Wall.x, o_Wall.y, x+10, y, x-10, y+10)) && keyTrans == true {
 		show_debug_message("hit");
+=======
+if (distance_to_object(o_Wall) < 10) {
+	show_debug_message("not enough space");
+>>>>>>> 8e63f8351a053235212eb250e768b6ad572a1d0f
 }
 
 if (place_meeting(x, y+1,o_Wall))&&(keyTrans == true){
@@ -127,3 +132,8 @@ if(!place_meeting(x,y+1,o_Floor)){
 }
 
 if ( hsp !=0) image_xscale = sign(hsp);
+
+if (point_in_rectangle(o_Wall.x, o_Wall.y, x - 10, y -10, x + 10, y))
+	{
+		vsp = -5;
+	}
