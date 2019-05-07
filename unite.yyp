@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "d5beedd7-3081-4205-a96f-694510e32097",
+            "Value": {
+                "id": "5f9f150b-89e7-41f6-915e-a283b31d3809",
+                "resourcePath": "rooms\\debug_room\\debug_room.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d66b2957-8a8c-4a20-9256-5666b73faa0b",
             "Value": {
                 "id": "86f0c835-0679-4722-82a9-54734da6d683",
