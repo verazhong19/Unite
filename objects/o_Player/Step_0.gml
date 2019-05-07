@@ -24,12 +24,23 @@ if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
 	vsp = -9;
 }
 
+if(place_meeting(x, y+1,o_Floor))&&(keyUp == true){
+	vsp = -9;
+}
+
 if(place_meeting(x, y+1,o_Switch))&&(keyUp == true){
 	vsp = -9;
 }
 //horizontal collision
 if(place_meeting(x+hsp, y, o_Wall)){
 	while(!place_meeting(x+sign(hsp),y,o_Wall)){
+		x = x+sign(hsp);
+	}
+	hsp = 0;	
+}
+
+if(place_meeting(x+hsp, y, o_Floor)){
+	while(!place_meeting(x+sign(hsp),y,o_Floor)){
 		x = x+sign(hsp);
 	}
 	hsp = 0;	
@@ -49,6 +60,14 @@ if(place_meeting(x, y+vsp, o_Wall)){
 	vsp = 0;	
 }
 
+if(place_meeting(x, y+vsp, o_Floor)){
+	while(!place_meeting(x,y+sign(vsp),o_Floor)){
+		y = y+sign(vsp);
+	}
+	vsp = 0;	
+}
+
+
 if(place_meeting(x, y+vsp, o_Switch)){
 	while(!place_meeting(x,y+sign(vsp),o_Switch)){
 		y = y+sign(vsp);
@@ -57,6 +76,11 @@ if(place_meeting(x, y+vsp, o_Switch)){
 }
 
 //transform
+
+if (point_in_rectangle(o_Wall.x, o_Wall.y, x+10, y, x-10, y+10)) && keyTrans == true {
+		show_debug_message("hit");
+}
+
 if (place_meeting(x, y+1,o_Wall))&&(keyTrans == true){
 	vsp = -6;
 	alarm_set(0, 6);
@@ -68,6 +92,14 @@ if (place_meeting(x, y+1,o_Switch))&&(keyTrans == true){
 	alarm_set(0, 6);
 		
 }
+
+if (place_meeting(x, y+1,o_Floor))&&(keyTrans == true){
+	vsp = -6;
+	alarm_set(0, 6);
+		
+}
+
+
 //set x coordinate
 x = x+hsp;
 
@@ -80,7 +112,7 @@ if(global.hpCorgi == 0){
 }
 
 //animation
-if(!place_meeting(x,y+1,o_Wall)){
+if(!place_meeting(x,y+1,o_Floor)){
 	image_index=0;
 	
 	if(sign(vsp)>0) image_index = 0; else image_index = 0;

@@ -14,9 +14,14 @@ hsp = move * walkSpeed;
 vsp = vsp + grv;
 
 //jump
-if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
+if(place_meeting(x, y+1,o_Wall)&&(keyUp == true)){
 	vsp = -4;
 }
+
+if(place_meeting(x, y+1,o_Floor))&&(keyUp == true){
+	vsp = -9;
+}
+
 
 //transform
 if keyTrans{
@@ -33,11 +38,25 @@ if(place_meeting(x+hsp, y, o_Wall)){
 	hsp = 0;	
 }
 
+if(place_meeting(x+hsp, y, o_Floor)){
+	while(!place_meeting(x+sign(hsp),y,o_Floor)){
+		x = x+sign(hsp);
+	}
+	hsp = 0;	
+}
 //vertical collision
 if(place_meeting(x, y+vsp, o_Wall)){
 
 	vsp = 0;	
 }
+
+if(place_meeting(x, y+vsp, o_Floor)){
+	while(!place_meeting(x,y+sign(vsp),o_Floor)){
+		y = y+sign(vsp);
+	}
+	vsp = 0;	
+}
+
 
 //set x coordinate
 x = x+hsp;
@@ -46,7 +65,7 @@ x = x+hsp;
 y = y+vsp;
 
 //animation
-if(!place_meeting(x,y+1,o_Wall)){
+if(!place_meeting(x,y+1,o_Floor)){
 	sprite_index=s_Mecha;
 	image_speed = 0;
 	
