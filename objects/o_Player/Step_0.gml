@@ -95,3 +95,8 @@ if(!place_meeting(x,y+1,o_Wall)){
 }
 
 if ( hsp !=0) image_xscale = sign(hsp);
+
+if (point_in_rectangle(o_Wall.x, o_Wall.y, x - 10, y -10, x + 10, y))
+	{
+		vsp = -5;
+	}
