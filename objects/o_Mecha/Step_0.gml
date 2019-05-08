@@ -18,6 +18,10 @@ if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
 	vsp = -4;
 }
 
+if(place_meeting(x, y+1,o_BlueSwitch))&&(keyUp == true){
+	vsp = -9;
+}
+
 //transform
 if keyTrans{
 	instance_change(o_Player, true);
@@ -33,6 +37,12 @@ if(place_meeting(x+hsp, y, o_Wall)){
 	hsp = 0;	
 }
 
+if(place_meeting(x+hsp, y, o_BlueSwitch)){
+	while(!place_meeting(x+sign(hsp),y,o_BlueSwitch)){
+		x = x+sign(hsp);
+	}
+	hsp = 0;	
+}
 //vertical collision
 if(place_meeting(x, y+vsp, o_Wall)){
 

@@ -24,7 +24,7 @@ if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
 	vsp = -9;
 }
 
-if(place_meeting(x, y+1,o_Switch))&&(keyUp == true){
+if(place_meeting(x, y+1,o_RedSwitch))&&(keyUp == true){
 	vsp = -9;
 }
 //horizontal collision
@@ -35,8 +35,8 @@ if(place_meeting(x+hsp, y, o_Wall)){
 	hsp = 0;	
 }
 
-if(place_meeting(x+hsp, y, o_Switch)){
-	while(!place_meeting(x+sign(hsp),y,o_Switch)){
+if(place_meeting(x+hsp, y, o_RedSwitch)){
+	while(!place_meeting(x+sign(hsp),y,o_RedSwitch)){
 		x = x+sign(hsp);
 	}
 	hsp = 0;	
@@ -49,8 +49,8 @@ if(place_meeting(x, y+vsp, o_Wall)){
 	vsp = 0;	
 }
 
-if(place_meeting(x, y+vsp, o_Switch)){
-	while(!place_meeting(x,y+sign(vsp),o_Switch)){
+if(place_meeting(x, y+vsp, o_RedSwitch)){
+	while(!place_meeting(x,y+sign(vsp),o_RedSwitch)){
 		y = y+sign(vsp);
 	}
 	vsp = 0;	
@@ -64,7 +64,7 @@ if (place_meeting(x, y+1-vsp,o_Wall))&&(keyTrans == true){
 		
 }
 
-if (place_meeting(x, y+1-vsp,o_Switch))&&(keyTrans == true){
+if (place_meeting(x, y+1-vsp,o_RedSwitch))&&(keyTrans == true){
 	vsp = -6;
 	alarm_set(0, 6);
 		
@@ -81,7 +81,7 @@ if(global.hpCorgi == 0){
 }
 
 //animation
-if(!place_meeting(x,y+1,o_Wall)){
+if(!place_meeting(x,y+1,o_Wall) && !place_meeting(x,y+1, o_RedSwitch)){
 	sprite_index=s_PlayerJump;
 	
 	if(sign(vsp)>0) image_index = 0; else image_index = 0;
@@ -98,3 +98,5 @@ else {
 }
 
 if ( hsp !=0) image_xscale = sign(hsp);
+
+hitDelay--;

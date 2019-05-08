@@ -1,8 +1,8 @@
 {
-    "id": "9411203d-d81b-4311-bfd8-3dcbff727f01",
+    "id": "21752e70-4ecc-4316-be17-266e6fa3207b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_DestroyableWall",
+    "name": "o_PurpleSwitch",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": true,
-    "spriteId": "90381fdf-59ca-4895-a58f-c7e094aaa52d",
+    "spriteId": "630aea13-8ce5-4e6f-9e0a-eab6330dcdd3",
     "visible": true
 }
