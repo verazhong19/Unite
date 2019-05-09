@@ -92,7 +92,7 @@ y = y+vsp;
 
 //restart game upon death
 if(global.hpCorgi == 0){
-	game_restart();
+	room_restart();
 }
 
 //animation

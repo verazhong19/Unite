@@ -23,3 +23,5 @@ else if(!global.pinkWall && global.blueWall){
 	global.pinkWall = true;
 	global.blueWall = true;
 }
+
+instance_deactivate_object(o_PurpleSwitch);

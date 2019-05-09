@@ -29,7 +29,7 @@ if keyTrans{
 
 //restart on death
 if (global.hpMecha == 0){
-	game_restart();
+	room_restart();
 }
 
 //horizontal collision
