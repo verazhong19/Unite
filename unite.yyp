@@ -761,6 +761,25 @@
             }
         },
         {
+            "Key": "7d29e3f3-f092-4607-907a-e7773ace1dbd",
+            "Value": {
+                "id": "b76b1de0-d531-4950-ac39-8cdf5867764d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "shaders\/sh_Red\/sh_Red.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "7e38b696-5600-470c-908a-5ee033ac9f69",
             "Value": {
                 "id": "a73be469-824d-42e0-ad55-eefcf63ff637",

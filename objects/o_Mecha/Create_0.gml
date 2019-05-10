@@ -6,6 +6,7 @@ vsp = 0;
 grv = 0.3;
 walkSpeed = 1;
 hitDelay = 0;
+flash = 0;
 persistent = true;
 
 //Shooting

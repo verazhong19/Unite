@@ -3,3 +3,4 @@
 
 hp = 3;
 hitDelay = 0;
+flash = 0;
