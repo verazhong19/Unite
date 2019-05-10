@@ -24,6 +24,10 @@ if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
 	vsp = -9;
 }
 
+if(place_meeting(x, y+1,o_PurpleSwitch))&&(keyUp == true){
+	vsp = -9;
+}
+
 if(place_meeting(x, y+1,o_RedSwitch))&&(keyUp == true){
 	vsp = -9;
 }
@@ -41,6 +45,9 @@ if(place_meeting(x+hsp, y, o_RedSwitch)){
 	}
 	hsp = 0;	
 }
+
+
+
 //vertical collision
 if(place_meeting(x, y+vsp, o_Wall)){
 	while(!place_meeting(x,y+sign(vsp),o_Wall)){
@@ -56,6 +63,8 @@ if(place_meeting(x, y+vsp, o_RedSwitch)){
 	vsp = 0;	
 }
 
+
+
 //transform
 
 if (place_meeting(x, y+1-vsp,o_Wall))&&(keyTrans == true){
@@ -69,6 +78,12 @@ if (place_meeting(x, y+1-vsp,o_RedSwitch))&&(keyTrans == true){
 	alarm_set(0, 6);
 		
 }
+
+if (place_meeting(x, y+1-vsp,o_PurpleSwitch))&&(keyTrans == true){
+	vsp = -6;
+	alarm_set(0, 6);
+		
+}
 //set x coordinate
 x = x+hsp;
 
@@ -77,11 +92,11 @@ y = y+vsp;
 
 //restart game upon death
 if(global.hpCorgi == 0){
-	game_restart();
+	room_restart();
 }
 
 //animation
-if(!place_meeting(x,y+1,o_Wall) && !place_meeting(x,y+1, o_RedSwitch)){
+if(!place_meeting(x,y+1,o_Wall) && !place_meeting(x,y+1, o_RedSwitch)&& !place_meeting(x,y+1,o_PurpleSwitch)){
 	sprite_index=s_PlayerJump;
 	
 	if(sign(vsp)>0) image_index = 0; else image_index = 0;

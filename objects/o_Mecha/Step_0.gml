@@ -29,7 +29,8 @@ if keyTrans{
 
 //restart on death
 if (global.hpMecha == 0){
-	game_restart();
+	instance_destroy();
+	room_restart();
 }
 
 //horizontal collision
@@ -44,8 +45,18 @@ if(place_meeting(x+hsp, y, o_BlueSwitch)){
 	hsp = 0;	
 }
 //vertical collision
+//vertical collision
 if(place_meeting(x, y+vsp, o_Wall)){
+	while(!place_meeting(x,y+sign(vsp),o_Wall)){
+		y = y+sign(vsp);
+	}
+	vsp = 0;	
+}
 
+if(place_meeting(x, y+vsp, o_BlueSwitch)){
+	while(!place_meeting(x,y+sign(vsp),o_BlueSwitch)){
+		y = y+sign(vsp);
+	}
 	vsp = 0;	
 }
 

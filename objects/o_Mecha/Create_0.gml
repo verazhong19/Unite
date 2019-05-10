@@ -7,3 +7,7 @@ grv = 0.3;
 walkSpeed = 1;
 hitDelay = 0;
 persistent = true;
+
+//Shooting
+can_fire = true;
+firing_delay = 30;
