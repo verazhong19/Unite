@@ -4,5 +4,5 @@
 if hitDelay < 0{
 flash = 5;
 hp --;
-hitDelay = 30;
+hitDelay = 20;
 }
