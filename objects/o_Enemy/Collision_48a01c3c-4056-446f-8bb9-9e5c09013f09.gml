@@ -1,3 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.hpCorgi--;
+
+if hitDelay < 0{
+hp --;
+hitDelay = 30;
+}
