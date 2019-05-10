@@ -6,7 +6,7 @@
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
 keyUp = keyboard_check(vk_up);
-keyTrans = keyboard_check(ord("X"));
+keyTrans = keyboard_check_pressed(ord("Z"));
 
 //assign one step variable
 var move = keyRight - keyLeft;
@@ -24,7 +24,10 @@ if(place_meeting(x, y+1,o_BlueSwitch))&&(keyUp == true){
 
 //transform
 if keyTrans{
+if global.mechOn{
 	instance_change(o_Player, true);
+	global.mechOn = false;
+}
 }
 
 //restart on death

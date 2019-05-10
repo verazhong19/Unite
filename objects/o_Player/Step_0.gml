@@ -66,23 +66,24 @@ if(place_meeting(x, y+vsp, o_RedSwitch)){
 
 
 //transform
-
-if (place_meeting(x, y+1-vsp,o_Wall))&&(keyTrans == true){
+if keyTrans{
+if (place_meeting(x, y+1-vsp,o_Wall))&&(!global.mechOn){
 	vsp = -6;
 	alarm_set(0, 6);
 		
 }
 
-if (place_meeting(x, y+1-vsp,o_RedSwitch))&&(keyTrans == true){
+if (place_meeting(x, y+1-vsp,o_RedSwitch))&&(!global.mechOn){
 	vsp = -6;
 	alarm_set(0, 6);
 		
 }
 
-if (place_meeting(x, y+1-vsp,o_PurpleSwitch))&&(keyTrans == true){
+if (place_meeting(x, y+1-vsp,o_PurpleSwitch))&&(!global.mechOn){
 	vsp = -6;
 	alarm_set(0, 6);
 		
+}
 }
 //set x coordinate
 x = x+hsp;

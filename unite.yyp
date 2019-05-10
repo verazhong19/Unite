@@ -965,7 +965,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/s_TMech\/s_TMech.yy",
+                "resourcePath": "sprites\/s_TShoot\/s_TShoot.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1497,7 +1497,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/s_TCorgi\/s_TCorgi.yy",
+                "resourcePath": "sprites\/s_TTrans\/s_TTrans.yy",
                 "resourceType": "GMSprite"
             }
         },
