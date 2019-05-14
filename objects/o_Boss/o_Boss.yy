@@ -1,48 +1,58 @@
 {
-    "id": "47592e23-60f5-48d1-bbd5-bfc8d7173084",
+    "id": "48a121f1-a760-4517-b266-bdaf28692c68",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_Enemy",
+    "name": "o_Boss",
     "eventList": [
         {
-            "id": "30cf51bd-899e-44e1-9834-63b9eed7231a",
+            "id": "5f6c1ab8-d33e-451d-b611-d2194fb0c432",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "47592e23-60f5-48d1-bbd5-bfc8d7173084"
+            "m_owner": "48a121f1-a760-4517-b266-bdaf28692c68"
         },
         {
-            "id": "52129fed-354a-4982-ba9b-4d37fc4d19fe",
+            "id": "2b6ccb59-dda7-4c96-8352-e0ef73cafc76",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "47592e23-60f5-48d1-bbd5-bfc8d7173084"
+            "m_owner": "48a121f1-a760-4517-b266-bdaf28692c68"
         },
         {
-            "id": "48a01c3c-4056-446f-8bb9-9e5c09013f09",
+            "id": "46526b94-91d1-44c2-8a9d-d58b9a9db191",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "8770b9a1-f473-4cba-8ef1-d7261099088d",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "47592e23-60f5-48d1-bbd5-bfc8d7173084"
+            "m_owner": "48a121f1-a760-4517-b266-bdaf28692c68"
         },
         {
-            "id": "a9f2cb7c-9daa-4e24-87e7-5236a12b5563",
+            "id": "fd836254-ebef-45bb-8dcf-a3248471d6a0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "47592e23-60f5-48d1-bbd5-bfc8d7173084"
+            "m_owner": "48a121f1-a760-4517-b266-bdaf28692c68"
+        },
+        {
+            "id": "e8d91c81-bde3-43a6-b450-335914de68cc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "48a121f1-a760-4517-b266-bdaf28692c68"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

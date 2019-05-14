@@ -68,6 +68,7 @@ if(place_meeting(x, y+vsp, o_Wall)){
 y+=vsp
 
 if (hp == 0){
+	global.gameEnd = true;
 	instance_destroy();
 }
 

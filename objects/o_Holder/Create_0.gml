@@ -4,3 +4,4 @@ global.hpMecha = 10;
 global.hpCorgi = 1;
 global.space = true;
 global.mechOn = false;
+global.gameEnd = false;

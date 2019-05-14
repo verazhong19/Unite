@@ -10,7 +10,7 @@ keyTrans = keyboard_check_pressed(ord("Z"));
 //assign one step variable
 var move = keyRight - keyLeft;
 hsp = move * walkSpeed;
-vsp = vsp + grv;
+vsp += grv;
 
 //friction
 if abs(speed) > 0 {
@@ -38,6 +38,7 @@ if(place_meeting(x+hsp, y, o_Wall)){
 	}
 	hsp = 0;	
 }
+
 
 if(place_meeting(x+hsp, y, o_RedSwitch)){
 	while(!place_meeting(x+sign(hsp),y,o_RedSwitch)){
