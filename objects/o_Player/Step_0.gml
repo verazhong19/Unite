@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 //assign input
-keyLeft = keyboard_check(vk_left);
-keyRight = keyboard_check(vk_right);
-keyUp = keyboard_check(vk_up);
-keyTrans = keyboard_check_pressed(ord("Z"));
+keyLeft = keyboard_check(vk_left) || (gamepad_axis_value(0, gp_axislh) < 0);
+keyRight = keyboard_check(vk_right) || (gamepad_axis_value(0, gp_axislh) > 0);
+keyUp = keyboard_check(vk_up) || gamepad_button_check(0, gp_face1);
+keyTrans = keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_shoulderr);
 
 //assign one step variable
 var move = keyRight - keyLeft;

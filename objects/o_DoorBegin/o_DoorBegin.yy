@@ -1,38 +1,28 @@
 {
-    "id": "4816832d-f699-469b-af2f-209d45912a6b",
+    "id": "0b4b979c-cb0b-49c7-a6de-1d23b2e11c07",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_StartMenu",
+    "name": "o_DoorBegin",
     "eventList": [
         {
-            "id": "e5163fd3-12d7-459a-b7f3-1515275f3a97",
+            "id": "de591401-a218-4827-b297-3c4a2d3158d8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "18378b29-57a3-469d-a6c3-130f45975172",
             "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "4816832d-f699-469b-af2f-209d45912a6b"
+            "eventtype": 4,
+            "m_owner": "0b4b979c-cb0b-49c7-a6de-1d23b2e11c07"
         },
         {
-            "id": "6cf9e185-bdb3-4d8e-8c9a-b1608a47b9ac",
+            "id": "0a10fa2c-94de-4bd3-952e-acaf3d7966d0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 9,
-            "m_owner": "4816832d-f699-469b-af2f-209d45912a6b"
-        },
-        {
-            "id": "17abca30-9016-4eee-beb9-11d69b5b679d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "d66b2957-8a8c-4a20-9256-5666b73faa0b",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "4816832d-f699-469b-af2f-209d45912a6b"
+            "eventtype": 4,
+            "m_owner": "0b4b979c-cb0b-49c7-a6de-1d23b2e11c07"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "3f1e39d1-145d-4a1b-b74c-e65c30672f14",
     "visible": true
 }

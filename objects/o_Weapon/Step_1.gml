@@ -4,7 +4,7 @@ x = o_Mecha.x;
 y = o_Mecha.y;
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
-keyShoot = keyboard_check(ord("Z"));
+keyShoot = keyboard_check(ord("X")) || gamepad_button_check(0, gp_face2);
 
 if keyRight{direction = 0;} else {direction = 180;}
 image_angle = direction;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-keyShoot=keyboard_check(ord("X"));
+keyShoot=keyboard_check(ord("X")) || gamepad_button_check(0, gp_face2);
 
 ///event that creates the bullet
 if can_fire && keyShoot
