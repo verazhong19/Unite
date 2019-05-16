@@ -400,6 +400,25 @@
             }
         },
         {
+            "Key": "39515fb9-ab21-4aef-bd5c-bf035e7ba6a2",
+            "Value": {
+                "id": "fea42fbb-0a1f-46e4-a361-40da8cd6d883",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite30\/sprite30.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3bf146b2-b3ec-4aae-be5f-572e1adcd031",
             "Value": {
                 "id": "0660f5e4-edd2-4d76-a26d-3652b515e31c",
@@ -625,25 +644,6 @@
                 ],
                 "resourcePath": "views\/548404f6-d1a3-4648-9fe2-c47dd1bddf92.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "557512a7-9db2-44f5-8da3-e69636a7d113",
-            "Value": {
-                "id": "4ab4671a-aebc-4d91-8005-381c4e90b703",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "sprites\/s_BlueWall\/s_BlueWall.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1236,6 +1236,25 @@
             }
         },
         {
+            "Key": "9b1d62cf-bfaf-4540-8585-5bb971a9da91",
+            "Value": {
+                "id": "c27ad893-c0f2-4821-be4d-d0dc238d981f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/s_BlueWall\/s_BlueWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9c0a96c5-bcdf-4c38-a31b-5ed074e1d847",
             "Value": {
                 "id": "dfcdd7e2-e2e1-4789-9647-132c15804566",
@@ -1575,6 +1594,25 @@
                 ],
                 "resourcePath": "objects\/o_Mecha\/o_Mecha.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "da025c4e-eb2b-4fd0-bb9d-b945e7189d04",
+            "Value": {
+                "id": "55ba0215-c5a1-4108-af12-98afff34ebff",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite31\/sprite31.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
