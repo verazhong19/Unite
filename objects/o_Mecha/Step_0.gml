@@ -13,6 +13,12 @@ var move = keyRight - keyLeft;
 hsp = move * walkSpeed;
 vsp = vsp + grv;
 
+if gamepad_button_check(0, gp_face3){
+	audio_stop_all();
+	instance_destroy(all);
+	room_restart();
+}
+
 //jump
 if(place_meeting(x, y+1,o_Wall))&&(keyUp == true){
 	vsp = -4;
@@ -33,6 +39,7 @@ if global.mechOn{
 //restart on death
 if (global.hpMecha == 0){
 	instance_destroy();
+	audio_stop_all();
 	room_restart();
 }
 

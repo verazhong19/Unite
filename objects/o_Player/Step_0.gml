@@ -12,6 +12,12 @@ var move = keyRight - keyLeft;
 hsp = move * walkSpeed;
 vsp += grv;
 
+if gamepad_button_check(0, gp_face3){
+	audio_stop_all();
+	instance_destroy(all);
+	room_restart();
+	
+}
 //friction
 if abs(speed) > 0 {
    friction=0.05;
@@ -94,6 +100,9 @@ y = y+vsp;
 
 //restart game upon death
 if(global.hpCorgi == 0){
+	instance_destroy(all);
+	audio_stop_all();
+	
 	room_restart();
 }
 
